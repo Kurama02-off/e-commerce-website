@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+HU:wght@100..400&display=swap');
+
+
+body{
+    font-family: "Open Sans", sans-serif;
+}
+
+.text-galing{
+     
+     font-family: "Playwrite HU", cursive;
+}
+
+.text-men{
+    font-family: "Montserrat", sans-serif;
+}
+
