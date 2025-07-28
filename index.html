@@ -36,9 +36,9 @@
     </header>
 
     <div class="flex flex-col md:flex-row items-center justify-around h-screen">
-        <div class="judul mt-5">
-            <h1 class="text-galing text-blue-500 text-3xl text-center">Season sale</h1>
-            <h1 class="text-men font-bold text-7xl text-center">Men's Fashion</h1>
+        <div class="judul mt-2">
+            <h1 class="text-galing text-blue-500 text-3xl text-center py-4">Season sale</h1>
+            <h1 class="text-men font-bold text-7xl text-center py-2">Men's Fashion</h1>
             <h1 class="text-center text-3xl font-semibold text-gray-500">Min. 35-70% off</h1>
             <div class="flex justify-center space-x-4 mt-20">
                 <button type="button" class="shiny-cta font-semibold p-2 border border-blue-600 text-white px-4 text-sm cursor-pointer bg-blue-600">SHOP NOW</button>
@@ -51,7 +51,7 @@
         </div>
     </div>
 
-    <section class="bg-gray-200 h-screen">
+    <section class="bg-gray-200 min-h-screen">
         <div class="flex flex-col md:flex-row items-center justify-center w-full gap-6 md:gap-20 py-20 md:py-4">
             <div class="flex gap-3 items-center p-4">
                 <span class="material-icons text-4xl text-blue-600">directions_car</span>
@@ -84,17 +84,46 @@
 
         </div>
 
-        <div class="content-img flex justify-around items-center">
-            <div class="left-img">
-                <img src="https://cdn.pixabay.com/photo/2016/11/29/07/16/balancing-1868051_1280.jpg" alt=""
-                class="w-full">
+        <div class="content-img flex justify-center items-center w-full py-10">
+            <div class="flex flex-col md:flex-row items-center gap-6">
+                 <div class="left-img relative">
+                    <img src="https://cdn.pixabay.com/photo/2016/11/29/07/16/balancing-1868051_1280.jpg" 
+                    alt="" class="h-96 object-cover rounded">
+                    <div class="absolute left-0 top-0 p-4">
+                        <h1 class="text-sm font-semibold text-blue-500 py-2">New Arrivals</h1>
+                        <h1 class="text-4xl font-semibold">Boy's Style</h1>
+                        <p class="font-semibold text-gray-700 py-4">Up to 70% Off</p>
+                        <button class="bg-blue-500 text-white text-sm font-semibold rounded-lg p-2 hover:bg-blue-600 transition duration-300 ease-in-out mt-4">
+                            Shop Now
+                        </button>
+                    </div>
+                </div>
+                <div class="right-img flex flex-col items-center justify-center gap-4">
+                    <div class="flex gap-2">
+                        <div class="relative">
+                            <img src="https://cdn.pixabay.com/photo/2017/08/01/11/48/woman-2564660_1280.jpg" 
+                            alt="" class="md:w-48  md:h-60 w-40 h-52 object-cover rounded">
+                            <div class="absolute left-2 top-2">
+                                <p class="bg-blue-500 w-20 text-center text-white text-xs md:text-sm font-semibold">25% OFF</p>
+                                <h1 class="md:text-4xl text-lg font-semibold text-white py-2">Back<span class="text-blue-700">pack</span></h1>
+                                <div class="flex items-center gap-2 text-white text-sm font-bold py-4">
+                                    <p>shop now</p>
+                                    <i class="fa-solid fa-arrow-right cursor-pointer"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="https://cdn.pixabay.com/photo/2022/09/05/02/42/watch-7433126_1280.jpg" 
+                             alt="" class="md:w-48 md:h-60 w-40 h-52 object-cover rounded">
+                    </div>
+                    <div>
+                        <img src="https://cdn.pixabay.com/photo/2019/10/28/20/23/explore-4585521_960_720.jpg" 
+                         alt="" class="w-full md:w-96 h-32 object-cover  rounded">
+                    </div>
+                     
+                </div>
+                
             </div>
-            <div class="right-img flex">
-                <img src="https://cdn.pixabay.com/photo/2017/08/01/11/48/woman-2564660_1280.jpg" alt="" 
-                class="w-1/4">
-                <img src="https://cdn.pixabay.com/photo/2022/09/05/02/42/watch-7433126_1280.jpg" alt="" class="w-1/4">
-            </div>
-        </div>
+    </div>
     </section>
 
     <script>
