@@ -16,7 +16,7 @@
             <i class="fas fa-bars block md:hidden" id="btnbar"></i>
         </div>
         <nav>
-            <ul class="hidden md:flex flex-col md:flex-row gap-4 absolute md:static bg-white/30 backdrop-blur-md md:bg-transparent p-4 md:p-0 top-16 left-0 w-full md:w-auto shadow-md md:shadow-none z-10 text-sm items-center font-semibold" id="menunav">
+            <ul class="hidden  md:flex flex-col md:flex-row gap-4  absolute md:static bg-white/30 backdrop-blur-md md:bg-transparent p-4 md:p-0 top-16 left-0 w-full md:w-auto shadow-md md:shadow-none z-10 text-sm items-center font-semibold" id="menunav">
                 <li><a href="">Home</a></li>
                 <li><a href="">Shop</a></li>
                 <li><a href="">pages</a></li>
@@ -52,7 +52,7 @@
     </div>
 
     <section class="bg-gray-200 min-h-screen">
-        <div class="flex flex-col md:flex-row items-center justify-center w-full gap-6 md:gap-20 py-20 md:py-4">
+        <div class="flex flex-col md:flex-row items-center justify-center w-full gap-6 md:gap-20 py-32 md:py-4">
             <div class="flex gap-3 items-center p-4">
                 <span class="material-icons text-4xl text-blue-600">directions_car</span>
                  <div>
@@ -119,12 +119,295 @@
                         <img src="https://cdn.pixabay.com/photo/2019/10/28/20/23/explore-4585521_960_720.jpg" 
                          alt="" class="w-full md:w-96 h-32 object-cover  rounded">
                     </div>
-                     
                 </div>
-                
             </div>
-    </div>
+        </div>
     </section>
+
+    <!-- HALAMAN PRODUCT -->
+    <section class="product bg-white">
+        <div class="flex flex-col gap-3 justify-center items-center py-4">
+            <h1 class="text-2xl text-semibold">Featured Products</h1>
+            <div class="flex gap-5">
+                <div class="garisbawah active font-semibold text-base cursor-pointer">
+                    New Arrivals
+                </div>
+                <div class="garisbawah font-semibold text-base cursor-pointer">
+                    Best Selling
+                </div>
+                <div class="garisbawah font-semibold text-base cursor-pointer">
+                    Top Rated
+                </div>
+            </div>
+        </div>
+
+        <!-- list product -->
+
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mx-auto gap-0 md:gap-4 px-2 md:px-4">
+            <!-- product-1 -->
+            <div class="md:max-w-xs max-w-3xs p-4">
+                <img src="https://cdn.pixabay.com/photo/2014/05/30/05/01/jackets-357898_1280.jpg" alt="" class="bg-gray-200 w-80 h-56 object-cover rounded mx-auto">
+                <p class="mt-2 text-sm text-gray-600">Backpack</p>
+                <h1 class="font-semibold text-lg">Aura Wibu</h1>
+                <div class="flex items-center mt-2">
+                    <div class="star flex gap-1 items-center">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star-half-alt text-yellow-400"></i>
+                    </div>
+                    <div class="text-gray-500 text-sm ml-2">
+                        (4.5)
+                    </div>
+                </div>
+                <div class="flex items-center gap-2 mt-4">
+                    <div class="bg-blue-100 rounded px-3 py-1 flex items-center gap-2">
+                        <span class="text-lg font-bold text-blue-600">$19.99</span>
+                        <span class="text-gray-400">-</span>
+                        <span class="text-lg font-bold text-gray-500 line-through">$29.99</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- product-2 -->
+
+             <div class="md:max-w-xs max-w-3xs p-4">
+                <img src="https://cdn.pixabay.com/photo/2016/11/23/18/12/bag-1854148_1280.jpg" alt="" class="bg-gray-200 w-80 h-56 object-cover rounded mx-auto">
+                <p class="mt-2 text-xs md:text-sm text-gray-600">Backpack</p>
+                <h1 class="font-semibold text-sm lg:text-lg">Blue Laptop Backpack</h1>
+                <div class="flex items-center mt-2">
+                    <div class="star flex gap-1 items-center">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star-half-alt text-yellow-400"></i>
+                    </div>
+                    <div class="text-gray-500 text-sm ml-2">
+                        (4.5)
+                    </div>
+                </div>
+                <div class="flex items-center gap-2 mt-4">
+                    <div class="bg-blue-100 rounded px-3 py-1 flex items-center gap-2">
+                        <span class="text-lg font-bold text-blue-600">$49.99</span>
+                        <span class="text-gray-400">-</span>
+                        <span class="text-lg font-bold text-gray-500 line-through">$69.99</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- product-3 -->
+
+            <div class="md:max-w-xs max-w-3xs p-4">
+                <img src="https://cdn.pixabay.com/photo/2016/11/19/18/06/feet-1840619_1280.jpg" alt="" class="bg-gray-200 w-80 h-56 object-cover rounded mx-auto">
+                <p class="mt-2 text-xs md:text-sm text-gray-600">Backpack</p>
+                <h1 class="font-semibold text-sm lg:text-lg">Blue Laptop Backpack</h1>
+                <div class="flex items-center mt-2">
+                    <div class="star flex gap-1 items-center">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star-half-alt text-yellow-400"></i>
+                    </div>
+                    <div class="text-gray-500 text-sm ml-2">
+                        (4.5)
+                    </div>
+                </div>
+                <div class="flex items-center gap-2 mt-4">
+                    <div class="bg-blue-100 rounded px-3 py-1 flex items-center gap-2">
+                        <span class="text-lg font-bold text-blue-600">$29.99</span>
+                        <span class="text-gray-400">-</span>
+                        <span class="text-lg font-bold text-gray-500 line-through">$89.99</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- product-4 -->
+
+            <div class="md:max-w-xs max-w-3xs p-4">
+                <img src="https://cdn.pixabay.com/photo/2018/02/24/20/39/clock-3179167_960_720.jpg" alt="" class="bg-gray-200 w-80 h-56 object-cover rounded mx-auto">
+                <p class="mt-2 text-xs md:text-sm text-gray-600">Backpack</p>
+                <h1 class="font-semibold text-sm lg:text-lg">Blue Laptop Backpack</h1>
+                <div class="flex items-center mt-2">
+                    <div class="star flex gap-1 items-center">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star-half-alt text-yellow-400"></i>
+                    </div>
+                    <div class="text-gray-500 text-sm ml-2">
+                        (4.5)
+                    </div>
+                </div>
+                <div class="flex items-center gap-2 mt-4">
+                    <div class="bg-blue-100 rounded px-3 py-1 flex items-center gap-2">
+                        <span class="text-lg font-bold text-blue-600">$19.99</span>
+                        <span class="text-gray-400">-</span>
+                        <span class="text-lg font-bold text-gray-500 line-through">$39.99</span>
+                    </div>
+                </div>
+            </div>    
+
+            <!-- 2 -->
+            
+            <!-- Produk ini hanya tampil di desktop, disembunyikan di hp -->
+            <div class="hidden md:block md:max-w-xs max-w-3xs p-4" id="product">
+                <img src="https://cdn.pixabay.com/photo/2016/11/29/12/51/adult-1869621_1280.jpg" alt="" class="bg-gray-200 w-80 h-56 object-cover rounded mx-auto">
+                <p class="mt-2 text-xs md:text-sm text-gray-600">Backpack</p>
+                <h1 class="font-semibold text-sm lg:text-lg">Blue Laptop Backpack</h1>
+                <div class="flex items-center mt-2">
+                    <div class="star flex gap-1 items-center">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star-half-alt text-yellow-400"></i>
+                    </div>
+                    <div class="text-gray-500 text-sm ml-2">
+                        (4.5)
+                    </div>
+                </div>
+                <div class="flex items-center gap-2 mt-4">
+                    <div class="bg-blue-100 rounded px-3 py-1 flex items-center gap-2">
+                        <span class="text-lg font-bold text-blue-600">$79.99</span>
+                        <span class="text-gray-400">-</span>
+                        <span class="text-lg font-bold text-gray-500 line-through">$169.99</span>
+                    </div>
+                </div>
+            </div> 
+
+             <div class="hidden md:block md:max-w-xs max-w-3xs p-4" id="product">
+                <img src="https://cdn.pixabay.com/photo/2017/12/06/20/23/accessory-3002608_1280.jpg" alt="" class="bg-gray-200 w-80 h-56 object-cover rounded mx-auto">
+                <p class="mt-2 text-xs md:text-sm text-gray-600">Backpack</p>
+                <h1 class="font-semibold text-sm lg:text-lg">Blue Laptop Backpack</h1>
+                <div class="flex items-center mt-2">
+                    <div class="star flex gap-1 items-center">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star-half-alt text-yellow-400"></i>
+                    </div>
+                    <div class="text-gray-500 text-sm ml-2">
+                        (4.5)
+                    </div>
+                </div>
+                <div class="flex items-center gap-2 mt-4">
+                    <div class="bg-blue-100 rounded px-3 py-1 flex items-center gap-2">
+                        <span class="text-lg font-bold text-blue-600">$52.99</span>
+                        <span class="text-gray-400">-</span>
+                        <span class="text-lg font-bold text-gray-500 line-through">$60.99</span>
+                    </div>
+                </div>
+            </div> 
+
+             <div class="hidden md:block md:max-w-xs max-w-3xs p-4" id="product">
+                <img src="https://cdn.pixabay.com/photo/2018/08/18/14/26/feet-3614862_1280.jpg" alt="" class="bg-gray-200 w-80 h-56 object-cover rounded mx-auto">
+                <p class="mt-2 text-xs md:text-sm text-gray-600">Backpack</p>
+                <h1 class="font-semibold text-sm lg:text-lg">Blue Laptop Backpack</h1>
+                <div class="flex items-center mt-2">
+                    <div class="star flex gap-1 items-center">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star-half-alt text-yellow-400"></i>
+                    </div>
+                    <div class="text-gray-500 text-sm ml-2">
+                        (4.5)
+                    </div>
+                </div>
+                <div class="flex items-center gap-2 mt-4">
+                    <div class="bg-blue-100 rounded px-3 py-1 flex items-center gap-2">
+                        <span class="text-lg font-bold text-blue-600">$41.99</span>
+                        <span class="text-gray-400">-</span>
+                        <span class="text-lg font-bold text-gray-500 line-through">$89.99</span>
+                    </div>
+                </div>
+            </div> 
+
+             <div class="hidden md:block md:max-w-xs max-w-3xs p-4" id="product">
+                <img src="https://cdn.pixabay.com/photo/2016/09/11/14/34/hat-1661552_960_720.jpg" alt="" class="bg-gray-200 w-80 h-56 object-cover rounded mx-auto">
+                <p class="mt-2 text-xs md:text-sm text-gray-600">Backpack</p>
+                <h1 class="font-semibold text-sm lg:text-lg">Blue Laptop Backpack</h1>
+                <div class="flex items-center mt-2">
+                    <div class="star flex gap-1 items-center">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star-half-alt text-yellow-400"></i>
+                    </div>
+                    <div class="text-gray-500 text-sm ml-2">
+                        (4.5)
+                    </div>
+                </div>
+                <div class="flex items-center gap-2 mt-4">
+                    <div class="bg-blue-100 rounded px-3 py-1 flex items-center gap-2">
+                        <span class="text-lg font-bold text-blue-600">$49.99</span>
+                        <span class="text-gray-400">-</span>
+                        <span class="text-lg font-bold text-gray-500 line-through">$69.99</span>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class="mx-auto md:hidden block text-center">
+            <button id="btnmore" class="bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg mt-6 hover:bg-blue-600 transition duration-300 ease-in-out">
+                Load More
+            </button>
+        </div>
+
+
+        <div class="flex flex-col md:flex-row justify-center gap-4 items-center mt-10 p-4">
+            <div class="promo relative w-full md:w-1/2">
+                <img src="https://cdn.pixabay.com/photo/2015/06/22/08/40/child-817373_1280.jpg" alt="" class="w-full h-52 object-cover rounded">
+                <div class="absolute left-0 top-0 p-4 text-white">
+                    <p class="">Weekend Sale</p>
+                    <h1 class="text-2xl font-semibold">Kids Fashion</h1>
+                    <p class="text-gray-300 font-semibold py-2">Up to 50% Off</p>
+                    <button class="bg-blue-500 text-white text-sm font-semibold rounded-lg p-2 hover:bg-blue-600 transition duration-300 ease-in-out">
+                        Shop Now
+
+                </div>
+            </div>
+            <div class="promo relative w-full md:w-1/2">
+                <img src="https://cdn.pixabay.com/photo/2016/11/29/07/16/adult-1868049_1280.jpg" alt="" class="w-full h-52 object-cover rounded">
+                <div class="absolute left-0 top-0 p-4 text-white">
+                    <p class="">Weekend Sale</p>
+                    <h1 class="text-2xl font-semibold">Kids Fashion</h1>
+                    <p class="text-gray-300 font-semibold py-2">Up to 50% Off</p>
+                    <button class="bg-blue-500 text-white text-sm font-semibold rounded-lg p-2 hover:bg-blue-600 transition duration-300 ease-in-out">
+                        Shop Now
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <footer class="bg-gray-900 text-white py-8 mt-10">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="mb-4 md:mb-0 text-center md:text-left">
+                <h2 class="font-bold text-xl mb-2">SOA</h2>
+                <p class="text-gray-400 text-sm">Your trusted fashion store. Stay stylish with us!</p>
+            </div>
+            <div class="flex flex-col md:flex-row gap-4 items-center">
+                <a href="#" class="hover:text-blue-400 text-sm">Home</a>
+                <a href="#" class="hover:text-blue-400 text-sm">Shop</a>
+                <a href="#" class="hover:text-blue-400 text-sm">About</a>
+                <a href="#" class="hover:text-blue-400 text-sm">Contact</a>
+            </div>
+            <div class="flex gap-4 mt-4 md:mt-0">
+                <a href="#" aria-label="Instagram" class="hover:text-blue-400"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Facebook" class="hover:text-blue-400"><i class="fab fa-facebook"></i></a>
+                <a href="#" aria-label="Twitter" class="hover:text-blue-400"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="text-center text-gray-500 text-xs mt-6">
+            &copy; 2024 SOA. All rights reserved.
+        </div>
+    </footer>
 
     <script>
         const btnbar = document.getElementById('btnbar');
@@ -132,6 +415,17 @@
         btnbar.addEventListener('click', () => {
             menunav.classList.toggle('hidden');
         });
+
+        const btnmore = document.getElementById('btnmore');
+        const products = document.querySelectorAll('#product');
+        
+        btnmore.addEventListener('click', () => {
+            products.forEach(product => {
+                product.classList.toggle('hidden');
+            });
+            btnmore.classList.add('hidden');
+        });
+
     </script>
 </body>
 </html>

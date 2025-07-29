@@ -14,3 +14,29 @@ body{
     font-family: "Montserrat", sans-serif;
 }
 
+
+.garisbawah{
+    position: relative;
+    display: inline-block;
+}
+
+.garisbawah::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #3238e1;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+
+.garisbawah:hover::after {
+    transform: scaleX(1);
+}
+
+.garisbawah.active::after {
+    transform: scaleX(1);
+}
