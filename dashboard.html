@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/src/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+    <title>SOA - Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body class="dashboard flex">
+
+    <div class="w-2/4 md:w-2/12 h-screen  bg-blue-500">
+        <div class="flex items-center justify-center py-4 gap-2">
+          <h1 class="text-2xl text-white">Soa Admin</h1>
+          <img src="https://imgs.search.brave.com/eNiVpp9sBWgfq2u9FDgrE9RhZIitbCmVG1voCti8hMg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMtcGxhdGZvcm0u/OTlzdGF0aWMuY29t/Ly9jOUh4MHdVclhI/TjZNeGJXdS1ENDc4/dE1PM1k9LzB4MTAw/MDoxMDAweDIwMDAv/Zml0LWluLzUwMHg1/MDAvOTlkZXNpZ25z/LWNvbnRlc3RzLWF0/dGFjaG1lbnRzLzkw/LzkwODk3L2F0dGFj/aG1lbnRfOTA4OTc0/ODc" alt="" class="w-10 h-10 rounded-full">
+
+        </div>
+        <div class="dashboard-menu flex flex-col gap-2 p-4 mt-4" id="menu">
+          <div class="menu-items active bg-blue-600 rounded-md flex items-center gap-4 justify-star text-white p-4 hover:bg-blue-600 cursor-pointer" data-page="dashboard">
+            <div class="icon">
+              <i class="fas fa-tachometer-alt text-base "></i>
+            </div>
+             <div class="text-white text-base">
+              Dashboard
+            </div>
+          </div>
+
+           <div class="menu-items flex items-center rounded-md gap-4 justify-start text-white p-4 hover:bg-blue-600 cursor-pointer" data-page="Orders">
+            <div class="icon">
+              <i class="fas fa-shopping-cart"></i>
+            </div>
+             <div class="text-white text-base">
+              Orders
+            </div>
+          </div>
+
+           <div class="menu-items flex items-center rounded-md gap-4 justify-start text-white p-4 hover:bg-blue-600 cursor-pointer" data-page="Statistik">
+            <div class="icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+             <div class="text-white text-base">
+               Statistik
+            </div>
+          </div>
+           <div class="menu-items flex items-center rounded-md gap-4 justify-start text-white p-4 hover:bg-blue-600 cursor-pointer"
+           data-page="Products">
+            <div class="icon">
+              <i class="fas fa-box"></i>
+            </div>
+             <div class="text-white text-base">
+              Products
+            </div>
+          </div>
+           <div class="menu-items flex items-center gap-4 rounded-md justify-start text-white p-4 hover:bg-blue-600 cursor-pointer"
+           data-page="Stock">
+            <div class="icon">
+              <i class="fas fa-warehouse"></i>
+            </div>
+             <div class="text-white text-base">
+              Stock
+            </div>
+          </div>
+           <div class="menu-items flex items-center rounded-md gap-4 justify-start text-white p-4 hover:bg-blue-600 cursor-pointer"
+           data-page="Offers">
+            <div class="icon">
+              <i class="fas fa-tags"></i>
+            </div>
+             <div class="text-white text-base">
+              Offers
+            </div>
+          </div>
+          <div class="flex items-center rounded-md gap-4 justify-start text-white p-4 hover:bg-blue-600 cursor-pointer"
+           data-page="Offers">
+            <div class="icon">
+              <i class="fas fa-sign-out-alt"></i>
+            </div>
+             <div class="text-white text-base">
+              Logout
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- page -->
+
+    <div class="flex-1 p-8">
+
+      <!-- page dashboard -->
+      <div class="page" id="dashboard">
+        <div class="flex items-center justify-between">
+          <h1 class="font-semibold">Dashboard menu</h1>
+          <div class="icon-left flex items-center gap-4">
+            <div class="flex items-center gap-4">
+              <i class="fas fa-search text-gray-500"></i>
+              <input type="text" placeholder="Search..." class="border border-gray-300 rounded-md p-2 ml-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+            <i class="fa-solid fa-bell text-yellow-500"></i>
+            <div class="div flex items-center gap-2">
+                <span class="flex items-center justify-center w-10 h-10 bg-blue-400 rounded-full">
+                <i class="fa-solid fa-user text-xs text-white"></i>
+                </span>
+              <div class="flex flex-col">
+                <span class="text-gray-500">Admin</span>
+                <span class="text-gray-500">Mamat</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="table w-full bg-blue-500 mt-4">
+         <table class="min-w-full divide-y divide-gray-200">
+          <thead class="bg-blue-600">
+            <tr>
+              <th class="text-white p-4">ID</th>
+              <th class="text-white p-4">Name</th>
+              <th class="text-white p-4">Price</th>
+              <th class="text-white p-4">jumlah</th>
+              <th class="text-white p-4">Status</th>
+              <th class="text-white p-4">Edit</th>
+            </tr>
+          </thead>
+          <tbody class="bg-blue-800 text-white divide-y divide-gray-200">
+            <tr>
+              <td class="px-4 py-2  text-center align-middle">
+                  1
+              </td>
+              <td class="px-4 py-2  text-center align-middle">
+                  Jaket Kulit
+              </td>
+              <td class="px-4 py-2  text-center align-middle">
+                  Rp. 500.000
+              </td>
+              <td class="px-4 py-2  text-center align-middle">
+                  3
+              </td>
+              <td class="px-4 py-2  text-center align-middle">
+                  <span class="bg-red-500 text-white px-2 py-1 rounded">Pending</span>
+              </td>
+              <td class="px-4 py-2  text-center align-middle">
+                  <button class="bg-blue-600 text-white px-4 py-1 rounded">Edit</button>
+              </td>
+            </tr>
+          </tbody>
+          
+         </table>
+        </div>
+      </div>
+
+      <!-- page Orders -->
+      <div class="page hidden" id="Orders">
+        <h1>Orders menu</h1>
+      </div>
+
+      <!-- page Statistik -->
+      <div class="page hidden" id="Statistik">
+        <h1>Statistik menu</h1>
+      </div>
+
+      <!-- page Products -->
+      <div class="page hidden" id="Products">
+        <h1>Products menu</h1>
+      </div>
+
+      <!-- page Stock -->
+      <div class="page hidden" id="Stock">
+        <h1>Stock menu</h1>
+      </div>
+
+      <!-- page Offers -->
+      <div class="page hidden" id="Offers">
+        <h1>Offers menu</h1>
+      </div>
+
+
+    </div>
+
+
+    <script>
+      const menuitems = document.querySelectorAll('.menu-items');
+      const pages = document.querySelectorAll('.page');
+
+      menuitems.forEach(items => {
+        items.addEventListener('click', () => {
+
+          menuitems.forEach(i => i.classList.remove('bg-blue-600', 'active'));
+          pages.forEach(p => p.classList.add('hidden'));
+
+
+          items.classList.add('bg-blue-600', 'active');
+
+          const pageId = items.getAttribute('data-page');
+          document.getElementById(pageId).classList.remove('hidden');
+        });
+        
+      });
+        
+    </script>
+    
+</body>
+</html>
