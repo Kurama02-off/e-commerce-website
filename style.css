@@ -44,7 +44,6 @@ body{
 .product {
     transition: transform 0.3s ease, background 0.3s ease;
     position: relative; 
-    cursor: pointer;
     z-index: 1; 
 }
 
