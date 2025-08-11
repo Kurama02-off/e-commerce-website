@@ -1,15 +1,15 @@
 {
-  "name": "ecommerce",
+  "name": "backend",
   "version": "1.0.0",
-  "description": "E-commerce Project Collaboration Fahmi X Ridho",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
-    "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "FahmiXRidho",
+  "author": "Basuki Ridho",
   "license": "ISC",
+  "description": "E-commerce Project Collaboration Fahmi X Ridho",
   "dependencies": {
+    "express": "^5.1.0",
     "nodemon": "^3.1.10"
   }
 }
